@@ -1,47 +1,7 @@
-Appcelerator Titanium Mobile Module Project
-===========================================
-
 Very simple module with very simple purpose - expose call of refreshSourcesIfNecessary of Apple EventKit
 
 https://developer.apple.com/documentation/eventkit/ekeventstore/1507421-refreshsourcesifnecessary?language=objc
 
 
-INSTALL
--------------------
-
-Mac OS X
---------
-Copy the distribution zip file into the `~/Library/Application Support/Titanium` folder
-
-Linux
------
-Copy the distribution zip file into the `~/.titanium` folder
-
-Windows
--------
-Copy the distribution zip file into the `C:\ProgramData\Titanium` folder
-
-
-REGISTER YOUR MODULE
---------------------
-
-Register your module with your application by editing `tiapp.xml` and adding your module.
-Example:
-
-<modules>
-	<module version="0.1">ti.calendar.refresh</module>
-</modules>
-
-When you run your project, the compiler will combine your module along with its dependencies
-and assets into the application.
-
-
-USING YOUR MODULE IN CODE
--------------------------
-
-To use your module in code, you will need to require it.
-
-For example,
-
-	var TiCalendarRefresher = require('ti.calendar.refresh');
-	TiCalendarRefresher.refreshSourcesIfNecessary();
+var TiCalendarRefresher = require('ti.calendar.refresh');
+TiCalendarRefresher.refreshSourcesIfNecessary();
