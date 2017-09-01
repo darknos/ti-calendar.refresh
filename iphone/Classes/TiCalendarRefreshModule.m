@@ -1,8 +1,8 @@
 /**
  * ti.calendar.refresh
  *
- * Created by Your Name
- * Copyright (c) 2017 Your Company. All rights reserved.
+ * Created by Sergey Nosenko
+ * Copyright (c) 2017 Sergey Nosenko. All rights reserved.
  */
 
 #import "TiCalendarRefreshModule.h"
@@ -21,8 +21,6 @@
     }
     if (store == NULL) {
         DebugLog(@"[WARN] Could not access EventStore. ");
-    } else {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(eventStoreChanged:) name:EKEventStoreChangedNotification object:nil];
     }
     return store;
 }
